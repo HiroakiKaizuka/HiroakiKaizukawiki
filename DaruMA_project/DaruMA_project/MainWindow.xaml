@@ -1,0 +1,12 @@
+﻿<Window x:Class="DaruMA_project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="750" Width="800" Loaded="onWindowLoaded">
+    <Grid Width="auto" Height="auto">
+        <Image Height="537" HorizontalAlignment="Stretch" Margin="0,133,0,0" Name="MainImage" Stretch="Fill" VerticalAlignment="Top" Width="754" />
+        <Image Height="127" HorizontalAlignment="Left" Margin="243,12,0,0" Name="GameOverImage1" Stretch="Fill" VerticalAlignment="Top" Width="178" Source="/DaruMA_project;component/imagedata/GameOver1.png" Visibility="Hidden" />
+        <Image Height="127" HorizontalAlignment="Left" Margin="597,0,0,0" Name="GameOverImage2" Stretch="Fill" VerticalAlignment="Top" Width="181" Source="/DaruMA_project;component/imagedata/GameOver2.png" Visibility="Hidden" />
+        <Label Content="" Height="115" HorizontalAlignment="Left" Margin="42,12,0,0" Name="Player1Point" VerticalAlignment="Top" Width="195" FontSize="70" Visibility="Visible" Foreground="Blue" />
+        <Label Content="" Height="115" HorizontalAlignment="Left" Margin="422,12,0,0" Name="Player2Point" VerticalAlignment="Top" Width="195" FontSize="70" Visibility="Visible" Foreground="Red" />
+    </Grid>
+</Window>
