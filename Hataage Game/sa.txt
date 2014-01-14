@@ -1,0 +1,110 @@
+//ここにゲーム要素を追加
+            int A=0;
+            //ランダムな値を0から4まで用意
+            System.Random r = new System.Random(5);
+            for (int a = 0; a < 5; a++)
+            {
+                int b1 = r.Next(4);
+
+                //右手を挙げる処理
+                if (b1 == 0)
+                {
+                    /*Label.Content = "右上げて";
+                    Label.FontSize = 20;*/
+                    int c=0;
+                    int d=0;
+                    do{
+                        Label.Content = "右上げて";
+                        Label.FontSize = 20;
+                         if (this.dot > 0.5f){//内積が0.5より多いなら正解
+                             A = A + 1;
+                             Label1.Content = A;
+                             c = 1;
+                         }
+                         if (this.dot2 > 0.5f){//内積が0.5より多いなら不正解
+                             A = A-1;
+                             Label1.Content = A;
+                             d = 1;
+                         }
+                         
+                    }while(c==1||d==1);
+                }
+
+                else if (b1 == 1)
+                {
+                    /*Label.Content = "左上げて";
+                    Label.FontSize = 20;*/
+                    int c1 = 0;
+                    int d1 = 0;
+                    do
+                    {
+                        Label.Content = "左上げて";
+                        Label.FontSize = 20;
+                        if (this.dot > 0.5f)
+                        {//内積が0.5より多いなら正解
+                            A = A + 1;
+                            Label1.Content = A;
+                            c1 = 1;
+                        }
+                        if (this.dot2 > 0.5f)
+                        {//内積が0.5より多いなら不正解
+                            A = A - 1;
+                            Label1.Content = A;
+                            d1= 1;
+                        }
+
+                    } while (c1 == 1 || d1 == 1);
+                }
+
+                else if (b1 == 2)
+                {
+                    /*Label.Content = "右げないで左上げて";
+                    Label.FontSize = 20;*/
+                    int c2 = 0;
+                    int d2 = 0;
+                    do
+                    {
+                        Label.Content = "右げないで左上げて";
+                        Label.FontSize = 20;
+                        if (this.dot > 0.5f)
+                        {//内積が0.5より多いなら正解
+                            A = A + 1;
+                            Label1.Content = A;
+                            c2 = 1;
+                        }
+                        if (this.dot2 > 0.5f)
+                        {//内積が0.5より多いなら不正解
+                            A = A - 1;
+                            Label1.Content = A;
+                            d2 = 1;
+                        }
+
+                    } while (c2 == 1 || d2 == 1);
+                }
+                else if (b1 == 3)
+                {
+                    /*Label.Content = "左げないで右上げて";
+                    Label.FontSize = 20;*/
+                    int c3 = 0;
+                    int d3 = 0;
+                    do
+                    {
+                        Label.Content = "左げないで右上げて";
+                        Label.FontSize = 20;
+                        if (this.dot > 0.5f)
+                        {//内積が0.5より多いなら正解
+                            A = A + 1;
+                            Label1.Content = A;
+                            c3 = 1;
+                        }
+                        if (this.dot2 > 0.5f)
+                        {//内積が0.5より多いなら不正解
+                            A = A - 1;
+                            Label1.Content = A;
+                            d3 = 1;
+                        }
+
+                    } while (c3 == 1 || d3 == 1);
+                }
+
+            }
